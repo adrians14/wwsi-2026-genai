@@ -1,0 +1,503 @@
+[
+    {
+      "question": "What is the maximum baggage allowance for flights to Greece?",
+      "answer": "Our standard flights to Greece allow one checked bag up to 23kg plus a carry-on. Overweight fees will apply if you exceed these limits, so we recommend checking with your airline for the most up-to-date details. Additional baggage can be purchased if needed.",
+      "category": "air-travel"
+    },
+    {
+      "question": "Can I select my seat when booking flights to Croatia?",
+      "answer": "Yes, you can select your preferred seat during the booking process or at check-in. However, some airlines may charge an additional fee for certain seats or seat upgrades. Please review the seating policy at the time of booking.",
+      "category": "air-travel"
+    },
+    {
+      "question": "How early should I arrive at the airport for flights to Italy?",
+      "answer": "We recommend arriving at least two hours before departure for domestic flights within Europe, and three hours for international flights. This allows sufficient time for check-in, security, and any unforeseen delays. Always check the latest guidelines before traveling.",
+      "category": "air-travel"
+    },
+    {
+      "question": "What happens if my flight is delayed or canceled due to weather?",
+      "answer": "If your flight is affected by weather, airlines typically offer rebooking on the next available flight at no additional cost. We also provide assistance with connecting flights and hotel accommodations if necessary. Always contact our support line or the airline directly for further help.",
+      "category": "air-travel"
+    },
+    {
+      "question": "Are in-flight meals included for trips to Greece?",
+      "answer": "Many of our airline partners include a complimentary snack or meal on flights to Greece, but policies can vary by carrier and class of service. For detailed meal options or dietary restrictions, please review the airline’s guidelines when booking. You can also purchase additional meals if needed.",
+      "category": "air-travel"
+    },
+    {
+      "question": "Can I bring sports equipment, such as a surfboard, on the flight?",
+      "answer": "Yes, you can bring sports equipment, but airlines usually treat these items as oversized or special baggage. Extra fees may apply based on weight and dimensions. Always contact us in advance so we can coordinate with the airline to ensure a smooth check-in process.",
+      "category": "air-travel"
+    },
+    {
+      "question": "Is online check-in available for flights to Croatia?",
+      "answer": "Most of our partner airlines offer online check-in for flights to Croatia. You can usually check in online 24 to 48 hours before departure. We highly recommend completing online check-in to save time at the airport.",
+      "category": "air-travel"
+    },
+    {
+      "question": "Does my child need a separate ticket for short-haul flights?",
+      "answer": "Children under two years old can often fly as lap infants at a discounted fare or sometimes for free, depending on the airline. Children older than two typically require a regular seat and ticket. Always verify specific age requirements when booking your trip.",
+      "category": "air-travel"
+    },
+    {
+      "question": "What documents do I need for check-in at the airport?",
+      "answer": "You will typically need a valid passport or ID, as well as your flight confirmation or boarding pass. Some countries may require a visa or other entry documentation, so check local requirements in advance. Always bring necessary proof of vaccination if required by the destination.",
+      "category": "air-travel"
+    },
+    {
+      "question": "Can I upgrade to business class after booking an economy ticket?",
+      "answer": "Upgrades are sometimes available if seats remain open. Each airline has its own upgrade policies and fee structures, so you can either request an upgrade at the time of booking or inquire at check-in. We can also assist with upgrade requests if you contact our support team.",
+      "category": "air-travel"
+    },
+    {
+      "question": "Do airlines charge for checked baggage on trips to Italy?",
+      "answer": "Many airlines include at least one free checked bag, but some budget carriers may charge extra. The cost will depend on your specific flight and fare type. Always review baggage details during the booking process to avoid any surprises at the airport.",
+      "category": "air-travel"
+    },
+    {
+      "question": "Are there direct flights available to the Greek islands?",
+      "answer": "Yes, several carriers offer direct flights to popular Greek islands during peak travel seasons. In the off-season, you may need a connecting flight via Athens or another hub. We will provide the most convenient options for your travel dates.",
+      "category": "air-travel"
+    },
+    {
+      "question": "How can I request special assistance for a disabled passenger?",
+      "answer": "Please contact our customer support at least 48 hours before your flight to arrange special assistance. Airlines can provide wheelchair services, priority boarding, and seating accommodations as needed. We aim to ensure a comfortable journey for all travelers.",
+      "category": "air-travel"
+    },
+    {
+      "question": "Is priority boarding included if I book a first-class ticket?",
+      "answer": "Yes, first-class tickets generally include priority boarding, additional baggage allowance, and lounge access. However, these benefits may vary by airline. Always confirm the specific perks associated with your fare type before completing your booking.",
+      "category": "air-travel"
+    },
+    {
+      "question": "What should I do if I miss my connecting flight?",
+      "answer": "If you miss a connecting flight booked through our platform due to an airline delay, the airline will typically rebook you on the next available flight at no extra cost. Contact our support team or the airline’s desk at the airport immediately for assistance.",
+      "category": "air-travel"
+    },
+    {
+      "question": "Can I carry my musical instrument as cabin baggage?",
+      "answer": "Small musical instruments can often be carried on board if they fit in the overhead bin or under the seat. Larger instruments may need to be checked or require an additional seat. We recommend confirming specific size and weight restrictions with the airline in advance.",
+      "category": "air-travel"
+    },
+    {
+      "question": "Will I earn frequent flyer miles for flights booked through your platform?",
+      "answer": "Yes, most flights booked through our platform are eligible for frequent flyer miles, provided the airline participates in a loyalty program. Just add your membership number during booking or check-in. Please note that certain discounted fares may have restricted mileage accrual.",
+      "category": "air-travel"
+    },
+    {
+      "question": "How do I change my flight date once I’ve booked?",
+      "answer": "You can change your flight date by logging into your account or calling our support team. Airline change fees and fare differences may apply. We recommend contacting us as soon as possible to secure new travel dates.",
+      "category": "air-travel"
+    },
+    {
+      "question": "Are there any direct flights from Rome to Dubrovnik?",
+      "answer": "During the summer season, several airlines offer direct flights from Rome to Dubrovnik. Outside of peak months, you may need to connect through another city. Check our website for the latest schedules and availability.",
+      "category": "air-travel"
+    },
+    {
+      "question": "Do you offer refundable flight tickets for trips to Greece?",
+      "answer": "We do offer refundable ticket options on certain airlines and fare classes. Refundability often comes with a higher fare, so please review the terms carefully during booking. If you have any questions, feel free to reach out to our support team for help.",
+      "category": "air-travel"
+    },
+    {
+      "question": "How can I modify my hotel reservation in Italy after it's confirmed?",
+      "answer": "You can modify your reservation by logging into your account or contacting our customer support. Changes are subject to hotel availability and may incur additional charges or fees. We advise making changes as early as possible to secure the best rates.",
+      "category": "hotels-and-booking"
+    },
+    {
+      "question": "Can I book a room with a sea view on the Greek islands?",
+      "answer": "Yes, we work with many hotels offering sea view rooms on the Greek islands. Simply select a room category labeled 'sea view' when booking. Availability can be limited, so it’s best to reserve early during peak season.",
+      "category": "hotels-and-booking"
+    },
+    {
+      "question": "What is your policy on hotel check-in and check-out times?",
+      "answer": "Most hotels allow check-in between 2:00 PM and 3:00 PM, with check-out around 11:00 AM or 12:00 PM. Early check-in or late check-out can sometimes be arranged for an extra fee, subject to the hotel’s discretion. Always let us know your preferences in advance.",
+      "category": "hotels-and-booking"
+    },
+    {
+      "question": "Do you offer discounted rates for group bookings in Croatia?",
+      "answer": "Yes, we often have special group rates for group bookings of ten or more guests. To obtain a customized quote, contact our group bookings department. We’ll do our best to secure a favorable price for your entire party.",
+      "category": "hotels-and-booking"
+    },
+    {
+      "question": "Are taxes and fees included in the hotel price displayed?",
+      "answer": "In most cases, local taxes and service fees are included in the displayed price. However, some destinations may charge a separate city tax or tourist fee payable at check-in or check-out. We’ll notify you of any additional charges during the booking process.",
+      "category": "hotels-and-booking"
+    },
+    {
+      "question": "How do I know if breakfast is included in my hotel booking?",
+      "answer": "When selecting a room type, check the description or inclusion details for a mention of 'breakfast included.' If you don’t see it listed, feel free to inquire with our support team. You can also add a breakfast package during check-in if available.",
+      "category": "hotels-and-booking"
+    },
+    {
+      "question": "What is your cancellation policy for hotel bookings in Athens?",
+      "answer": "Cancellation policies vary by hotel, but many offer free cancellation within a specific time frame. Some discounted rates may be non-refundable. We recommend reviewing the exact policy under 'Cancellation Terms' before finalizing your reservation.",
+      "category": "hotels-and-booking"
+    },
+    {
+      "question": "Can I earn loyalty points from the hotel’s rewards program?",
+      "answer": "Yes, if the hotel has a loyalty program, you can often accumulate points by providing your membership details at check-in. Some promotional rates may be excluded, so confirm with the hotel’s reception upon arrival.",
+      "category": "hotels-and-booking"
+    },
+    {
+      "question": "How can I request an extra bed or crib for my child?",
+      "answer": "You can add such requests in the 'special requests' section during booking or contact our support team. Hotels usually provide baby cribs or rollaway beds for an additional fee. Availability can be limited, so it’s best to request early.",
+      "category": "hotels-and-booking"
+    },
+    {
+      "question": "Do you offer all-inclusive hotel packages in Greece?",
+      "answer": "Yes, we partner with many resorts in Greece that offer all-inclusive packages. These typically include meals, drinks, and some activities. Look for the 'all-inclusive' label when browsing or filter your search results for relevant options.",
+      "category": "hotels-and-booking"
+    },
+    {
+      "question": "Is it possible to get adjoining rooms for my family?",
+      "answer": "Many hotels provide adjoining or connecting rooms upon request, but availability can be limited. Please note your preference when booking, and we’ll do our best to secure suitable accommodations. Early reservations increase your chances of success.",
+      "category": "hotels-and-booking"
+    },
+    {
+      "question": "Can I pay for my hotel booking in installments?",
+      "answer": "Certain hotels and packages allow for installment or partial payments if you book far in advance. Contact our billing department or check the payment details during checkout to see if installment options are available. Terms and conditions may vary by property.",
+      "category": "hotels-and-booking"
+    },
+    {
+      "question": "Do the hotels in Italy have wheelchair-accessible rooms?",
+      "answer": "Most hotels in Italy offer accessible rooms, but the level of accessibility can vary. We recommend checking the hotel's accessibility features in advance. Our support team can also contact the hotel directly to confirm room layout and amenities.",
+      "category": "hotels-and-booking"
+    },
+    {
+      "question": "How do I book a honeymoon suite in Croatia?",
+      "answer": "Select the honeymoon suite or a similar romantic package under the room types when booking. If you don’t see it listed, contact our support team for assistance. We can also arrange special touches like champagne or room decorations if available.",
+      "category": "hotels-and-booking"
+    },
+    {
+      "question": "What if I arrive at my hotel late at night?",
+      "answer": "Most hotels have 24-hour reception or late check-in options. It’s recommended to inform the hotel or our support team of your estimated arrival time, especially if you plan to arrive after midnight. This ensures a smooth check-in process.",
+      "category": "hotels-and-booking"
+    },
+    {
+      "question": "Do I need to show a credit card at hotel check-in?",
+      "answer": "Yes, most hotels require a credit card for incidentals and verification upon check-in. The card is usually authorized for a deposit or hold. If you prefer to use a debit card or cash, please check with the hotel in advance as policies differ.",
+      "category": "hotels-and-booking"
+    },
+    {
+      "question": "Is Wi-Fi included in all hotel bookings?",
+      "answer": "Many hotels include complimentary Wi-Fi, but it’s not guaranteed in all properties or all room types. Check the room amenities list or contact our support team if you need reliable internet access. Premium Wi-Fi may be available for an extra fee.",
+      "category": "hotels-and-booking"
+    },
+    {
+      "question": "Can I book a hotel room without a credit card?",
+      "answer": "Most hotels require a valid credit card to guarantee the reservation. Some properties may allow bookings with alternative payment methods or a deposit. If you do not have a credit card, please reach out to our support team to explore possible solutions.",
+      "category": "hotels-and-booking"
+    },
+    {
+      "question": "How can I extend my stay if I decide to stay longer?",
+      "answer": "You can request an extension by contacting our support team or the hotel’s front desk directly. This is subject to availability and may incur additional charges at the prevailing rate. We recommend requesting any extensions as soon as you make your decision.",
+      "category": "hotels-and-booking"
+    },
+    {
+      "question": "Do hotels in Santorini offer free airport transfers?",
+      "answer": "Some hotels in Santorini include complimentary airport transfers, but it varies by property. Always check the amenities or transportation details when booking. If transfers are not included, we can help arrange a private or shared shuttle for you.",
+      "category": "hotels-and-booking"
+    },
+    {
+      "question": "Do you cater to vegetarian or vegan diets at your partner hotels in Italy?",
+      "answer": "Many hotels offer vegetarian, vegan, and other dietary options upon request. When booking, mention your preferences in the ‘special requests’ section. It’s always a good idea to confirm with the hotel’s restaurant upon arrival.",
+      "category": "food"
+    },
+    {
+      "question": "What traditional Greek dishes should I try during my stay?",
+      "answer": "You won’t want to miss moussaka, souvlaki, and fresh Greek salads with feta cheese. Greek cuisine also features delicious pastries like spanakopita and baklava. We recommend exploring local tavernas for an authentic taste of the country’s culinary heritage.",
+      "category": "food"
+    },
+    {
+      "question": "Is breakfast typically included in your holiday packages?",
+      "answer": "Many of our packages include breakfast, but it depends on the specific hotel or resort. Always check the package details or ask our support team to confirm. Upgrading to half-board or full-board is also possible in most destinations.",
+      "category": "food"
+    },
+    {
+      "question": "Can I find gluten-free dining options in Croatia?",
+      "answer": "Croatia’s major cities and tourist destinations generally offer gluten-free options in restaurants and hotels. We advise discussing dietary needs with your server or hotel staff. For a wider selection, stick to well-known establishments that cater to special diets.",
+      "category": "food"
+    },
+    {
+      "question": "Do restaurants near the hotels serve late-night meals?",
+      "answer": "In larger cities like Athens, Rome, and Dubrovnik, many restaurants stay open late, especially during peak travel seasons. However, smaller towns might have earlier closing times. Check local listings or ask your hotel staff for recommendations.",
+      "category": "food"
+    },
+    {
+      "question": "Are drinks included in all-inclusive packages?",
+      "answer": "Most all-inclusive packages include a range of drinks such as soft drinks, water, and select alcoholic beverages. Premium spirits may cost extra. Always review the details of your package to understand what’s covered.",
+      "category": "food"
+    },
+    {
+      "question": "How can I ensure my child’s meals are kid-friendly?",
+      "answer": "Many family-focused hotels offer children’s menus or buffet options designed for younger palates. You can also request smaller portion sizes or milder versions of local dishes. Always inform hotel or restaurant staff of any dietary restrictions or preferences.",
+      "category": "food"
+    },
+    {
+      "question": "Is tap water safe to drink in Greece, Italy, and Croatia?",
+      "answer": "Tap water is generally safe in most parts of these countries, but it can vary by region. Many travelers prefer bottled water, especially on some Greek islands. Feel free to ask local guides or your hotel staff for specific recommendations.",
+      "category": "food"
+    },
+    {
+      "question": "Do you offer cooking classes as part of the holiday package?",
+      "answer": "We can arrange cooking classes in certain destinations upon request. These classes provide a fun way to learn about local cuisine. If you’re interested, contact our support team or look for packages labeled 'culinary experience.'",
+      "category": "food"
+    },
+    {
+      "question": "Are there halal or kosher food options available?",
+      "answer": "Halal and kosher options can be found in major cities, although availability may be limited in smaller towns. We recommend researching specific restaurants in advance. Additionally, some hotels can adapt meals to dietary restrictions if requested prior to arrival.",
+      "category": "food"
+    },
+    {
+      "question": "Can I request a special menu for medical or allergy-related diets?",
+      "answer": "Yes, most hotels and resorts can accommodate special diets due to allergies or medical conditions. Indicate your needs at the time of booking. We also suggest confirming with the chef or restaurant manager upon arrival to ensure your meals are safely prepared.",
+      "category": "food"
+    },
+    {
+      "question": "Which Italian cities are best known for their culinary scene?",
+      "answer": "Rome, Florence, and Naples are famous for their vibrant food cultures. Each region offers unique specialties, such as pizza in Naples, pasta in Rome, and bistecca alla fiorentina in Florence. We recommend sampling local dishes to truly experience Italian cuisine.",
+      "category": "food"
+    },
+    {
+      "question": "Is wine included with meals in half-board packages?",
+      "answer": "Half-board packages typically include breakfast and dinner, but drinks may or may not be included. This varies by property. If you want a beverage-inclusive option, consider upgrading to all-inclusive or check with the property for add-on packages.",
+      "category": "food"
+    },
+    {
+      "question": "Do cruise excursions include meals or snacks?",
+      "answer": "If your trip includes a cruise excursion, most packages offer at least one meal or snacks on board. The exact inclusions depend on the cruise operator and duration of the excursion. We’ll provide details about meal arrangements before you set sail.",
+      "category": "food"
+    },
+    {
+      "question": "How can I explore local street food safely?",
+      "answer": "Look for stalls with high turnover and fresh ingredients. In popular tourist areas, street vendors often adhere to local health regulations. When in doubt, ask for recommendations from hotel staff or local guides to ensure a safe and tasty experience.",
+      "category": "food"
+    },
+    {
+      "question": "What are common meal times in Greece?",
+      "answer": "Greeks often eat lunch between 1:00 PM and 3:00 PM and dinner after 8:00 PM, especially in summertime. Many restaurants open late and stay open well into the night. Embrace the relaxed pace to fully enjoy the local dining culture.",
+      "category": "food"
+    },
+    {
+      "question": "Can I bring local cheeses or cured meats back home?",
+      "answer": "This depends on your home country’s customs regulations. The European Union typically has fewer restrictions on inter-EU travel, but if you’re traveling outside the EU, check local import rules regarding animal products. Some items may require special permits.",
+      "category": "food"
+    },
+    {
+      "question": "What types of restaurants are near most hotels in Dubrovnik?",
+      "answer": "You’ll find a mix of traditional Croatian konobas, international eateries, and casual cafes near hotels in Dubrovnik. Many serve fresh seafood and Dalmatian specialties. The city’s old town also offers upscale dining options with sea views.",
+      "category": "food"
+    },
+    {
+      "question": "Are restaurants in Italy open on Sunday?",
+      "answer": "Many Italian restaurants are open on Sundays, especially those in tourist areas. However, some local eateries may close one day a week, which can fall on Sunday or Monday. Always call ahead or check local listings for accurate opening hours.",
+      "category": "food"
+    },
+    {
+      "question": "How can I experience authentic Greek tavernas?",
+      "answer": "Explore neighborhoods away from the main tourist spots and look for places frequented by locals. Greek tavernas usually feature home-cooked dishes, live music on weekends, and a friendly, communal atmosphere. Ask your hotel for their top recommendations.",
+      "category": "food"
+    },
+    {
+      "question": "Does your travel insurance cover medical expenses abroad?",
+      "answer": "Yes, our travel insurance policies typically include coverage for emergency medical expenses and hospital stays. The specific coverage limit and terms depend on the plan you select. Always review the policy details to ensure it meets your needs.",
+      "category": "insurance"
+    },
+    {
+      "question": "Do I need special insurance for adventure sports in Croatia?",
+      "answer": "Some adventure activities like scuba diving or rock climbing may require additional coverage. Check the details of your policy or opt for an adventure sports rider. It’s essential to have the right coverage before participating in high-risk activities.",
+      "category": "insurance"
+    },
+    {
+      "question": "Is trip cancellation insurance part of your standard plan?",
+      "answer": "Our standard plan usually includes some form of trip cancellation and interruption coverage. However, the reasons for cancellation that qualify for coverage vary. It’s best to carefully review the policy document to understand eligible scenarios.",
+      "category": "insurance"
+    },
+    {
+      "question": "How do I file a claim if I lose my luggage?",
+      "answer": "First, report the loss to the airline and obtain a Property Irregularity Report (PIR). Then, contact our insurance provider and submit the required documentation, including the PIR and proof of ownership. They will guide you through the claim process.",
+      "category": "insurance"
+    },
+    {
+      "question": "Does your travel insurance cover COVID-19-related issues?",
+      "answer": "Many of our plans now include coverage for COVID-19-related medical expenses. Quarantine costs and trip cancellation due to a positive test may also be partially covered. Be sure to read the policy’s epidemic-related clauses for full details.",
+      "category": "insurance"
+    },
+    {
+      "question": "Can I purchase travel insurance if I’m already abroad?",
+      "answer": "Some providers allow you to buy or extend coverage even if you’re already traveling. However, coverage may be limited or subject to certain restrictions. Please contact our support team to explore options best suited to your circumstances.",
+      "category": "insurance"
+    },
+    {
+      "question": "What if I need to cancel my trip due to family emergencies?",
+      "answer": "If you have a policy that includes trip cancellation coverage for family emergencies, you can file a claim. You’ll need to provide documentation, such as a medical certificate or proof of the emergency. Final approval depends on the insurance provider’s terms.",
+      "category": "insurance"
+    },
+    {
+      "question": "Does travel insurance cover delayed flights or missed connections?",
+      "answer": "Most comprehensive plans offer coverage for trip delays, missed connections, or additional transportation costs due to unforeseen events. You typically need to provide receipts and proof of the delay. Check your policy for the exact criteria and benefit limits.",
+      "category": "insurance"
+    },
+    {
+      "question": "How can I add insurance to an existing booking?",
+      "answer": "You can add travel insurance through your online account or by contacting our customer support. Some providers have strict time limits, so it’s advisable to purchase insurance soon after booking. This ensures you have the widest range of coverage options.",
+      "category": "insurance"
+    },
+    {
+      "question": "Do you offer annual multi-trip insurance plans?",
+      "answer": "Yes, we partner with insurers that provide annual multi-trip plans, which can be cost-effective if you travel frequently. These plans usually have a limit on the length of each trip. Read the policy carefully to ensure it meets your travel schedule.",
+      "category": "insurance"
+    },
+    {
+      "question": "Will my policy cover accidental damage to a rental car?",
+      "answer": "Some travel insurance policies include Collision Damage Waiver (CDW) or offer it as an add-on. This covers damage to a rental car, but typically excludes liability coverage. Confirm with the insurer whether your policy includes this option.",
+      "category": "insurance"
+    },
+    {
+      "question": "Is repatriation included if I fall seriously ill abroad?",
+      "answer": "Most comprehensive travel insurance policies include repatriation in case of serious illness or injury. This may cover the cost of returning you to your home country under medical supervision. Always check the policy’s limits and exclusions to be sure.",
+      "category": "insurance"
+    },
+    {
+      "question": "What documentation do I need to submit a medical claim?",
+      "answer": "You usually need a detailed medical report, receipts for treatment, and any additional documentation the insurer requests. Keep copies of all hospital bills and prescriptions. Contact the insurance provider promptly for guidance on filing your claim.",
+      "category": "insurance"
+    },
+    {
+      "question": "Is there a waiting period before my coverage starts?",
+      "answer": "Some policies have a waiting period, especially for trip cancellation benefits, which may only kick in a set number of days after purchase. Medical coverage usually starts on your departure date. Always review the policy specifics to avoid surprises.",
+      "category": "insurance"
+    },
+    {
+      "question": "Will insurance cover me if I travel to a country with a travel advisory?",
+      "answer": "Coverage can be restricted if you travel to a destination under an official travel advisory or warning. Some insurers may refuse claims related to events in those areas. Check the policy’s stance on government travel advisories before booking.",
+      "category": "insurance"
+    },
+    {
+      "question": "What’s the maximum coverage amount for emergency medical expenses?",
+      "answer": "Coverage limits vary by policy, ranging from a few thousand euros up to several million, depending on the premium and plan type. Review your chosen policy to ensure the medical coverage aligns with your destination and travel plans.",
+      "category": "insurance"
+    },
+    {
+      "question": "Does my credit card provide sufficient travel insurance?",
+      "answer": "Many credit cards offer some level of travel insurance, but coverage can be limited or conditional on booking travel with that card. Compare the credit card’s coverage to a standalone policy to ensure you have adequate protection.",
+      "category": "insurance"
+    },
+    {
+      "question": "Are there age restrictions on your travel insurance plans?",
+      "answer": "Some insurers place age limits, while others offer senior-friendly plans at a higher premium. If you or a companion is above a certain age, verify eligibility and potential surcharges. We can help find a plan that suits your needs.",
+      "category": "insurance"
+    },
+    {
+      "question": "Can I get coverage for my pre-existing medical condition?",
+      "answer": "Certain policies offer coverage for pre-existing conditions if you meet specific criteria or purchase a waiver. You may need to complete a medical questionnaire. It’s crucial to disclose all relevant medical history to avoid claim denials.",
+      "category": "insurance"
+    },
+    {
+      "question": "Does the insurance cover stolen personal belongings?",
+      "answer": "Most plans include coverage for theft or loss of personal items up to a certain limit. You will need a police report and proof of ownership for claims. High-value items like electronics may require additional coverage or have specific sub-limits.",
+      "category": "insurance"
+    },
+    {
+      "question": "Do you offer guided tours of historical sites in Athens?",
+      "answer": "Yes, we offer both group and private guided tours to iconic sites like the Acropolis and the Parthenon. These tours are led by professional guides who share insights about Greek history and culture. Reserve in advance to secure your preferred dates.",
+      "category": "extra-activities"
+    },
+    {
+      "question": "Can I add a wine tasting experience in Tuscany to my package?",
+      "answer": "Absolutely! Tuscany is famous for its vineyards and wine-tasting tours. We can tailor your itinerary to include visits to local wineries and cellars. Simply let our support team know your preferences, and we’ll arrange everything.",
+      "category": "extra-activities"
+    },
+    {
+      "question": "Are there day-trip excursions available from Dubrovnik?",
+      "answer": "Yes, popular day-trip excursions include visiting the nearby Elafiti Islands or exploring the charming town of Mostar in Bosnia and Herzegovina. We also arrange guided tours to Montenegro. Our website lists detailed itineraries and prices.",
+      "category": "extra-activities"
+    },
+    {
+      "question": "How do I book a boat tour to the Greek islands?",
+      "answer": "You can add a boat tour to your package while booking online or by contacting our customer support. Depending on your preferences, we can arrange group tours or private yacht charters. Popular routes include island hopping around Santorini and Mykonos.",
+      "category": "extra-activities"
+    },
+    {
+      "question": "Is scuba diving available in Croatia for beginners?",
+      "answer": "Yes, many dive centers along the Croatian coast offer beginner-friendly courses and guided dives. They provide equipment rental and instruction from certified instructors. Make sure you check the age and health requirements before enrolling.",
+      "category": "extra-activities"
+    },
+    {
+      "question": "Do you organize hiking tours in the Italian countryside?",
+      "answer": "We can arrange guided or self-guided hiking tours in regions like Tuscany and the Amalfi Coast. We’ll provide route maps, recommendations for accommodations, and transport if needed. Contact our team to customize an itinerary that fits your skill level.",
+      "category": "extra-activities"
+    },
+    {
+      "question": "Can I book a private cooking class in Rome?",
+      "answer": "Absolutely! Private cooking classes are a fantastic way to immerse yourself in Italian gastronomy. We partner with local chefs who host small groups or one-on-one lessons. You’ll learn authentic recipes and get hands-on experience in a traditional kitchen.",
+      "category": "extra-activities"
+    },
+    {
+      "question": "Are there family-friendly water sports in Greece?",
+      "answer": "Yes, many seaside resorts and beaches offer family-oriented activities like paddleboarding, snorkeling, and banana boat rides. Always check age and safety guidelines. You can also find calm, shallow waters ideal for children in many Greek island destinations.",
+      "category": "extra-activities"
+    },
+    {
+      "question": "What cultural experiences can I join in Italy?",
+      "answer": "Italy is rich in cultural experiences, from opera performances in historic venues to art museum tours featuring works by Michelangelo and da Vinci. You can also attend local festivals celebrating food, wine, and regional traditions. We’ll help you plan the perfect cultural itinerary.",
+      "category": "extra-activities"
+    },
+    {
+      "question": "How do I reserve tickets for museum visits in Florence?",
+      "answer": "To avoid long lines at popular museums like the Uffizi Gallery and Accademia, we recommend booking tickets in advance. You can purchase them through our website or by contacting our support team. Our skip-the-line packages ensure more time for art appreciation.",
+      "category": "extra-activities"
+    },
+    {
+      "question": "Do you offer any sailing lessons in Croatia?",
+      "answer": "Yes, we partner with certified sailing schools along the Dalmatian coast. Programs range from beginner lessons to advanced certifications. Whether you want a fun day trip or a multi-day course, we can help you find the right option.",
+      "category": "extra-activities"
+    },
+    {
+      "question": "Are there group discounts for tours in Athens?",
+      "answer": "Yes, most tour operators offer discounts for larger groups. The size threshold for a group discount may vary, but often begins at 10 people. Contact us with your group’s details, and we’ll negotiate the best rates possible.",
+      "category": "extra-activities"
+    },
+    {
+      "question": "What’s included in your island-hopping package in the Cyclades?",
+      "answer": "Our Cyclades island-hopping package typically includes ferry tickets between islands, selected accommodations, and optional guided tours. We can also arrange activities like snorkeling, cultural walking tours, and traditional Greek dinners. Review the full itinerary on our website or contact our team for details.",
+      "category": "extra-activities"
+    },
+    {
+      "question": "How can I attend a local festival or event in Italy?",
+      "answer": "We regularly update our event calendar with local festivals, concerts, and cultural celebrations. If you see an event you’re interested in, let us know, and we’ll arrange tickets and transportation. Popular events like the Venice Carnival often book up quickly, so plan in advance.",
+      "category": "extra-activities"
+    },
+    {
+      "question": "Can I book a sunset cruise in Santorini?",
+      "answer": "Yes, our Santorini sunset cruises are a highlight of any trip. They typically include a tour around the caldera, stops for swimming, and dinner on board. You’ll witness spectacular sunsets over the Aegean Sea. Book early to secure the best availability.",
+      "category": "extra-activities"
+    },
+    {
+      "question": "Do you arrange private transfers for excursions outside Rome?",
+      "answer": "Yes, we can organize private drivers for day trips to nearby attractions like Pompeii or the Amalfi Coast. This service provides flexibility and comfort, allowing you to customize your schedule. Simply let us know your preferred itinerary, and we’ll handle the logistics.",
+      "category": "extra-activities"
+    },
+    {
+      "question": "Are kids allowed on winery tours in Tuscany?",
+      "answer": "While many wineries welcome families, some tours involve areas where children may have limited access. We recommend checking each winery’s policy in advance. Alternatively, consider a family-friendly tour that includes outdoor activities and non-alcoholic beverage options.",
+      "category": "extra-activities"
+    },
+    {
+      "question": "Can you arrange tickets for a football match in Italy?",
+      "answer": "Yes, we can help you purchase tickets for Serie A and other Italian football matches if they coincide with your travel dates. Availability varies, especially for high-profile matches, so contact us as soon as possible. You’ll enjoy the thrilling atmosphere of Italian stadiums.",
+      "category": "extra-activities"
+    },
+    {
+      "question": "What water sports are popular along the Amalfi Coast?",
+      "answer": "You’ll find plenty of options like kayaking, paddleboarding, and snorkeling. Boat rentals are also widely available if you want to explore hidden coves and coastal towns. We can arrange guided excursions or independent rentals based on your preference.",
+      "category": "extra-activities"
+    },
+    {
+      "question": "How do I book a day trip to the Blue Cave in Croatia?",
+      "answer": "The Blue Cave on Biševo Island is accessible by boat tour from Split or Hvar. You can add this activity to your travel package or book it separately through our website. Because it’s a popular attraction, advanced booking is highly recommended.",
+      "category": "extra-activities"
+    }
+  ]
+  

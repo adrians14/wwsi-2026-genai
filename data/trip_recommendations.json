@@ -1,0 +1,550 @@
+[
+  {
+    "review_id": "7a823fbc-e97b-4e8b-8fb0-f60dfb79a8ef",
+    "geo_entities": [
+      "las ramblas",
+      "spain"
+    ],
+    "recommendations": [
+      {
+        "rank": 1,
+        "country": "Spain",
+        "city": "Barcelona",
+        "cost": 950,
+        "days": 4,
+        "distance": 0.43875300884246826,
+        "details": "Discover Barcelona’s famous architecture, including Gaudí’s Sagrada Família. Indulge in tapas at bustling local bars. Take time to explore the city’s vibrant nightlife and Mediterranean beaches."
+      },
+      {
+        "rank": 2,
+        "country": "Spain",
+        "city": "Granada",
+        "cost": 850,
+        "days": 3,
+        "distance": 0.4564669132232666,
+        "details": "Explore the captivating Moorish palace of the Alhambra. Wander the winding lanes of the Albaicín. Feel the pulse of flamenco in authentic tablaos across the city."
+      },
+      {
+        "rank": 3,
+        "country": "Spain",
+        "city": "Granada",
+        "cost": 900,
+        "days": 3,
+        "distance": 0.4590367078781128,
+        "details": "Explore the ornate palaces and gardens of the Alhambra. Enjoy a tapas crawl through narrow lanes of the Albaicín. Immerse yourself in the fusion of Moorish and Spanish cultures."
+      }
+    ]
+  },
+  {
+    "review_id": "f88c2efb-7a35-4f9b-bab6-e5da51a6fb66",
+    "geo_entities": [
+      "mexican",
+      "italian",
+      "italian",
+      "oriental",
+      "chinese",
+      "chinese",
+      "dominican",
+      "latin music",
+      "souna",
+      "caribbean beach",
+      "middle ocean",
+      "english",
+      "spanish"
+    ],
+    "recommendations": [
+      {
+        "rank": 1,
+        "country": "Portugal",
+        "city": "Lisbon",
+        "cost": 1100,
+        "days": 5,
+        "distance": 0.5917248725891113,
+        "details": "Immerse yourself in the soulful melodies of Fado in a traditional venue. Take a short journey to Sintra’s fairytale palaces. Enjoy the city’s iconic pastel de nata and sweeping viewpoints."
+      },
+      {
+        "rank": 2,
+        "country": "Italy",
+        "city": "Palermo",
+        "cost": 850,
+        "days": 4,
+        "distance": 0.6267182230949402,
+        "details": "Sample Sicily’s unique street food, famous for its bold flavors. Explore Palermo’s vibrant markets and imposing cathedral. Experience a mix of Arab-Norman influences in architecture and cuisine."
+      },
+      {
+        "rank": 3,
+        "country": "Spain",
+        "city": "Madrid",
+        "cost": 900,
+        "days": 4,
+        "distance": 0.6278536915779114,
+        "details": "Witness the passion of flamenco in a traditional Madrid tablao. Sample local tapas in vibrant neighborhood markets. Visit world-class museums like the Prado and Reina Sofía."
+      }
+    ]
+  },
+  {
+    "review_id": "7d0d6450-9f39-4aa6-bda7-4ba3ae3f0515",
+    "geo_entities": [
+      "accademie uffizi"
+    ],
+    "recommendations": [
+      {
+        "rank": 1,
+        "country": "Italy",
+        "city": "Florence",
+        "cost": 1250,
+        "days": 4,
+        "distance": 0.3815937042236328,
+        "details": "Admire Renaissance masterpieces at the Uffizi Gallery. Learn to prepare traditional Tuscan dishes in a local cooking class. Walk across the Ponte Vecchio for a glimpse of the city’s storied past."
+      },
+      {
+        "rank": 2,
+        "country": "Italy",
+        "city": "Florence",
+        "cost": 1000,
+        "days": 3,
+        "distance": 0.40612202882766724,
+        "details": "Admire Renaissance masterpieces, including Botticelli’s works. Learn about Tuscan culinary heritage and try artisan gelato. Enjoy Florence’s timeless beauty through its museums and piazzas."
+      },
+      {
+        "rank": 3,
+        "country": "Italy",
+        "city": "Milan",
+        "cost": 950,
+        "days": 3,
+        "distance": 0.5189780592918396,
+        "details": "Experience Milan’s fashion-forward scene and upscale shopping. Admire Leonardo da Vinci’s works and other masterpieces. Enjoy chic cafes and a glimpse of modern Italian urban life."
+      }
+    ]
+  },
+  {
+    "review_id": "fea96f41-ce1c-412b-879d-bde06540bb40",
+    "geo_entities": [
+      "terrific",
+      "boston"
+    ],
+    "recommendations": [
+      {
+        "rank": 1,
+        "country": "Belgium",
+        "city": "Brussels",
+        "cost": 800,
+        "days": 3,
+        "distance": 0.6374146938323975,
+        "details": "Indulge in Belgian chocolates and waffles around Grand Place. Discover the city’s iconic Atomium and comic art. Enjoy locally brewed beers in centuries-old establishments."
+      },
+      {
+        "rank": 2,
+        "country": "Turkey",
+        "city": "Istanbul",
+        "cost": 1050,
+        "days": 5,
+        "distance": 0.6383004784584045,
+        "details": "Straddle two continents in the cultural mosaic of Istanbul. Visit the iconic Hagia Sophia, a symbol of the city’s layered history. Sail the Bosphorus for mesmerizing skyline views and waterside palaces."
+      },
+      {
+        "rank": 3,
+        "country": "Turkey",
+        "city": "Istanbul",
+        "cost": 1000,
+        "days": 5,
+        "distance": 0.6469701528549194,
+        "details": "Discover the crossroads of East and West by visiting the Hagia Sophia and Grand Bazaar. Take a scenic boat ride along the Bosphorus Strait. Relish diverse Turkish cuisine and historic architecture at every turn."
+      }
+    ]
+  },
+  {
+    "review_id": "e76aa181-5ed4-4de5-a868-797ae3905029",
+    "geo_entities": [],
+    "recommendations": []
+  },
+  {
+    "review_id": "9fc1c311-7b45-478e-a915-11aecbeacb46",
+    "geo_entities": [
+      "barcelona",
+      "metro",
+      "barcelona"
+    ],
+    "recommendations": [
+      {
+        "rank": 1,
+        "country": "Spain",
+        "city": "Barcelona",
+        "cost": 950,
+        "days": 4,
+        "distance": 0.4461546540260315,
+        "details": "Discover Barcelona’s famous architecture, including Gaudí’s Sagrada Família. Indulge in tapas at bustling local bars. Take time to explore the city’s vibrant nightlife and Mediterranean beaches."
+      },
+      {
+        "rank": 2,
+        "country": "Spain",
+        "city": "Seville",
+        "cost": 950,
+        "days": 5,
+        "distance": 0.5562176704406738,
+        "details": "Admire the world’s largest Gothic cathedral and climb the Giralda tower. Immerse yourself in the rhythms of flamenco dancing. Savor local tapas in atmospheric squares and taverns."
+      },
+      {
+        "rank": 3,
+        "country": "Spain",
+        "city": "Granada",
+        "cost": 850,
+        "days": 3,
+        "distance": 0.5578547120094299,
+        "details": "Explore the captivating Moorish palace of the Alhambra. Wander the winding lanes of the Albaicín. Feel the pulse of flamenco in authentic tablaos across the city."
+      }
+    ]
+  },
+  {
+    "review_id": "7fc7fb0e-a3fb-49f1-8efe-2ddf2edff456",
+    "geo_entities": [
+      "catalunya"
+    ],
+    "recommendations": [
+      {
+        "rank": 1,
+        "country": "Spain",
+        "city": "Barcelona",
+        "cost": 950,
+        "days": 4,
+        "distance": 0.43091094493865967,
+        "details": "Discover Barcelona’s famous architecture, including Gaudí’s Sagrada Família. Indulge in tapas at bustling local bars. Take time to explore the city’s vibrant nightlife and Mediterranean beaches."
+      },
+      {
+        "rank": 2,
+        "country": "Spain",
+        "city": "Valencia",
+        "cost": 990,
+        "days": 5,
+        "distance": 0.5252997875213623,
+        "details": "Learn the secrets of authentic paella in its birthplace. Marvel at futuristic architecture in the City of Arts and Sciences. Balance city exploration with relaxed beach time along the coast."
+      },
+      {
+        "rank": 3,
+        "country": "Spain",
+        "city": "Valencia",
+        "cost": 800,
+        "days": 3,
+        "distance": 0.5360198020935059,
+        "details": "Explore Valencia’s modern architectural marvels at the City of Arts and Sciences. Relax on the city’s broad sandy beaches. Enjoy the birthplace of paella for a truly authentic culinary experience."
+      }
+    ]
+  },
+  {
+    "review_id": "8712623f-e89d-4b6f-a3b1-32f5b4b0f1ba",
+    "geo_entities": [],
+    "recommendations": []
+  },
+  {
+    "review_id": "743e19a1-98b8-414c-b095-50d7f5510949",
+    "geo_entities": [
+      "australia"
+    ],
+    "recommendations": [
+      {
+        "rank": 1,
+        "country": "Austria",
+        "city": "Vienna",
+        "cost": 1000,
+        "days": 4,
+        "distance": 0.6241850256919861,
+        "details": "Attend a world-class concert in the city of music. Explore royal heritage at the Hofburg Palace and Schönbrunn. Delight in Viennese coffeehouse culture and traditional pastries."
+      },
+      {
+        "rank": 2,
+        "country": "United Arab Emirates",
+        "city": "Abu Dhabi",
+        "cost": 1100,
+        "days": 4,
+        "distance": 0.6275696754455566,
+        "details": "Marvel at the opulent design of Sheikh Zayed Grand Mosque. Traverse desert dunes in a thrilling safari adventure. Explore the city’s modern architecture and luxury shopping venues."
+      },
+      {
+        "rank": 3,
+        "country": "UAE",
+        "city": "Dubai",
+        "cost": 1200,
+        "days": 3,
+        "distance": 0.6302825212478638,
+        "details": "Gaze at futuristic skyscrapers in a city renowned for luxury. Join a desert safari for camel rides and dune bashing. Indulge in world-class shopping and global dining experiences."
+      }
+    ]
+  },
+  {
+    "review_id": "7793b79a-4bcd-4070-9350-e935584c2fe1",
+    "geo_entities": [
+      "carribean",
+      "san juan",
+      "u.s.",
+      "around.3-",
+      "puerto"
+    ],
+    "recommendations": [
+      {
+        "rank": 1,
+        "country": "Malta",
+        "city": "Valletta",
+        "cost": 1000,
+        "days": 5,
+        "distance": 0.659953236579895,
+        "details": "Sail around Valletta’s harbor to see fortresses up close. Discover vibrant nightlife in hidden bars and waterfront clubs. Experience the island’s Mediterranean allure and rich heritage."
+      },
+      {
+        "rank": 2,
+        "country": "Spain",
+        "city": "Seville",
+        "cost": 950,
+        "days": 4,
+        "distance": 0.6651092767715454,
+        "details": "Climb the Giralda for panoramic city views. Float down the Guadalquivir River, spotting Moorish architecture along the banks. Indulge in local tapas and flamenco rhythms."
+      },
+      {
+        "rank": 3,
+        "country": "Monaco",
+        "city": "Monaco",
+        "cost": 1500,
+        "days": 3,
+        "distance": 0.684049665927887,
+        "details": "Soak up the glitz of Monte Carlo’s casino and luxurious surroundings. Walk along the harbor lined with impressive yachts. Enjoy upscale dining and the scenic Riviera setting."
+      }
+    ]
+  },
+  {
+    "review_id": "51d20b63-f801-47d5-ad0c-36806b2d6eb3",
+    "geo_entities": [
+      "american",
+      "spanish",
+      "english",
+      "spanish",
+      "spanish",
+      "saona"
+    ],
+    "recommendations": [
+      {
+        "rank": 1,
+        "country": "Spain",
+        "city": "Barcelona",
+        "cost": 950,
+        "days": 4,
+        "distance": 0.5868250131607056,
+        "details": "Discover Barcelona’s famous architecture, including Gaudí’s Sagrada Família. Indulge in tapas at bustling local bars. Take time to explore the city’s vibrant nightlife and Mediterranean beaches."
+      },
+      {
+        "rank": 2,
+        "country": "Spain",
+        "city": "Valencia",
+        "cost": 800,
+        "days": 3,
+        "distance": 0.5946946144104004,
+        "details": "Explore Valencia’s modern architectural marvels at the City of Arts and Sciences. Relax on the city’s broad sandy beaches. Enjoy the birthplace of paella for a truly authentic culinary experience."
+      },
+      {
+        "rank": 3,
+        "country": "Spain",
+        "city": "Madrid",
+        "cost": 900,
+        "days": 4,
+        "distance": 0.5976805686950684,
+        "details": "Witness the passion of flamenco in a traditional Madrid tablao. Sample local tapas in vibrant neighborhood markets. Visit world-class museums like the Prado and Reina Sofía."
+      }
+    ]
+  },
+  {
+    "review_id": "5978199c-41be-4fe4-9743-2aea91e65159",
+    "geo_entities": [
+      "caribbean islands"
+    ],
+    "recommendations": [
+      {
+        "rank": 1,
+        "country": "Croatia",
+        "city": "Split",
+        "cost": 900,
+        "days": 5,
+        "distance": 0.5659568309783936,
+        "details": "Roam through Diocletian’s Palace in the heart of Split. Take a boat to nearby islands for pristine beaches and clear waters. Immerse yourself in Dalmatian cuisine and relaxed coastal charm."
+      },
+      {
+        "rank": 2,
+        "country": "Malta",
+        "city": "Valletta",
+        "cost": 1000,
+        "days": 5,
+        "distance": 0.5989934802055359,
+        "details": "Sail around Valletta’s harbor to see fortresses up close. Discover vibrant nightlife in hidden bars and waterfront clubs. Experience the island’s Mediterranean allure and rich heritage."
+      },
+      {
+        "rank": 3,
+        "country": "Tunisia",
+        "city": "Tunis",
+        "cost": 800,
+        "days": 4,
+        "distance": 0.6177562475204468,
+        "details": "Wander the winding alleys of Tunis’ ancient medina. Explore Carthage’s archaeological sites for a glimpse into history. Enjoy local North African cuisine and vibrant souks."
+      }
+    ]
+  },
+  {
+    "review_id": "f4bfef72-319a-4656-aa14-f7434fc7aef6",
+    "geo_entities": [
+      "belgian",
+      "spanish",
+      "porto olimpico",
+      "marina"
+    ],
+    "recommendations": [
+      {
+        "rank": 1,
+        "country": "Belgium",
+        "city": "Bruges",
+        "cost": 700,
+        "days": 3,
+        "distance": 0.47169405221939087,
+        "details": "Sail along Bruges’ picturesque canals past medieval buildings. Sample world-renowned Belgian chocolates and waffles. Admire historic architecture and romantic cobbled streets in the city center."
+      },
+      {
+        "rank": 2,
+        "country": "Portugal",
+        "city": "Porto",
+        "cost": 900,
+        "days": 4,
+        "distance": 0.4802728295326233,
+        "details": "Savor port wine in the city’s historic cellars. Cruise along the Douro River for picturesque views of Porto’s colorful buildings. Wander the narrow streets and charming squares of the Ribeira district."
+      },
+      {
+        "rank": 3,
+        "country": "Belgium",
+        "city": "Brussels",
+        "cost": 800,
+        "days": 3,
+        "distance": 0.4822097420692444,
+        "details": "Indulge in Belgian chocolates and waffles around Grand Place. Discover the city’s iconic Atomium and comic art. Enjoy locally brewed beers in centuries-old establishments."
+      }
+    ]
+  },
+  {
+    "review_id": "96ac4277-fbb0-4ac3-8fe0-50b192d779ad",
+    "geo_entities": [
+      "english"
+    ],
+    "recommendations": [
+      {
+        "rank": 1,
+        "country": "France",
+        "city": "Paris",
+        "cost": 1400,
+        "days": 4,
+        "distance": 0.6613197326660156,
+        "details": "Experience the romantic ambience of Paris with a visit to the Eiffel Tower and the Louvre. Savor renowned French wines in cozy local bistros. Enjoy walks along the Seine and immerse yourself in the city’s art and fashion."
+      },
+      {
+        "rank": 2,
+        "country": "Italy",
+        "city": "Venice",
+        "cost": 1200,
+        "days": 3,
+        "distance": 0.6680377721786499,
+        "details": "Glide through Venice’s canals on an iconic gondola ride. Admire the architecture and art of St. Mark’s Basilica. Uncover hidden gems in the city’s quieter backstreets and canals."
+      },
+      {
+        "rank": 3,
+        "country": "France",
+        "city": "Nice",
+        "cost": 1150,
+        "days": 5,
+        "distance": 0.6746907830238342,
+        "details": "Stroll along the famous Promenade des Anglais. Visit the museums dedicated to local and international art. Savor Provençal flavors and enjoy the azure waters of the Mediterranean."
+      }
+    ]
+  },
+  {
+    "review_id": "455b2a7b-5b27-4c49-a788-54f1bd503a7b",
+    "geo_entities": [
+      "beach"
+    ],
+    "recommendations": [
+      {
+        "rank": 1,
+        "country": "Turkey",
+        "city": "Bodrum",
+        "cost": 950,
+        "days": 4,
+        "distance": 0.5504149198532104,
+        "details": "Soak up the sun in Bodrum’s chic beach clubs. Sail to nearby coves for swimming and snorkeling. Explore ancient ruins and savor Aegean cuisine in seaside taverns."
+      },
+      {
+        "rank": 2,
+        "country": "Greece",
+        "city": "Rhodes",
+        "cost": 1100,
+        "days": 5,
+        "distance": 0.5627555847167969,
+        "details": "Step back in time within Rhodes’ UNESCO-listed old town. Relax on golden beaches with warm Aegean waters. Experience Greek island life through local tavernas and lively streets."
+      },
+      {
+        "rank": 3,
+        "country": "France",
+        "city": "Nice",
+        "cost": 1200,
+        "days": 5,
+        "distance": 0.5710768699645996,
+        "details": "Relax on the famous pebble beaches of the Côte d’Azur. Explore the vibrant Old Town and its flower market. Indulge in French Riviera cuisine and scenic seaside views."
+      }
+    ]
+  },
+  {
+    "review_id": "a52e33b5-37de-4157-84e2-21dd3abe5339",
+    "geo_entities": [
+      "italy"
+    ],
+    "recommendations": [
+      {
+        "rank": 1,
+        "country": "Italy",
+        "city": "Pisa",
+        "cost": 800,
+        "days": 3,
+        "distance": 0.44222235679626465,
+        "details": "Snap the obligatory photo at the famous Leaning Tower. Cycle through picturesque streets and along the Arno River. Indulge in Tuscan flavors at charming trattorias."
+      },
+      {
+        "rank": 2,
+        "country": "Italy",
+        "city": "Naples",
+        "cost": 1000,
+        "days": 5,
+        "distance": 0.44582802057266235,
+        "details": "Sample legendary pizza from generations-old pizzerias. Take a day trip to the ruins of Pompeii for ancient Roman insights. Revel in southern Italy’s vibrant street life and Mediterranean flair."
+      },
+      {
+        "rank": 3,
+        "country": "Italy",
+        "city": "Florence",
+        "cost": 1000,
+        "days": 3,
+        "distance": 0.45040595531463623,
+        "details": "Admire Renaissance masterpieces, including Botticelli’s works. Learn about Tuscan culinary heritage and try artisan gelato. Enjoy Florence’s timeless beauty through its museums and piazzas."
+      }
+    ]
+  },
+  {
+    "review_id": "f8c8bbdd-4cda-4b17-8d3e-11df6b5482d8",
+    "geo_entities": [],
+    "recommendations": []
+  },
+  {
+    "review_id": "c762fc72-4661-4dd5-ba10-d0e31fe24fef",
+    "geo_entities": [],
+    "recommendations": []
+  },
+  {
+    "review_id": "a3858ce9-7143-479b-a4f0-e47d97573069",
+    "geo_entities": [],
+    "recommendations": []
+  },
+  {
+    "review_id": "e35ce9c4-4967-444c-8f6b-77aa04bc6972",
+    "geo_entities": [],
+    "recommendations": []
+  }
+]
