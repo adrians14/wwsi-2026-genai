@@ -176,7 +176,7 @@ streamlit run scripts/app.py
 
 ## Sentiment Evaluation (Sentiment-Classification.ipynb)
 
-The notebook evaluates `analyze_sentiment` (GPT-4o, binary positive/negative) against `survey_sentiment` labels (3-class: positive/negative/neutral) on 1000 hotel reviews.
+The notebook loads `customer_surveys_hotels_1k.json`, classifies each review with `analyze_sentiment` (GPT-4o, binary positive/negative), and evaluates against the `survey_sentiment` labels (3-class: positive/negative/neutral).
 
 **Evaluation:** Binary only — 200 neutral reviews excluded for a fair pos/neg comparison on 800 samples.
 

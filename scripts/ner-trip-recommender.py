@@ -105,33 +105,33 @@ Return your response as a valid JSON object with the following format:
 positive_response_chain = positive_response_prompt | llm | JsonOutputParser()
 
 
-def handle_negative_review(review: str) -> dict:
-    """
-    Analyze review sentiment and generate a personalized apology for negative reviews.
-
-    If the review is positive, returns None for the response message.
-
-    Args:
-        review: Customer review text
-
-    Returns:
-        dict with keys:
-            - positive_sentiment (bool): True if review is positive
-            - reasoning (str): Explanation of the sentiment classification
-            - response_message (str | None): Apology message with 25% discount offer,
-              or None if review is positive
-    """
-    sentiment = analyze_sentiment(review)
-
-    response_message = None
-    if not sentiment["positive_sentiment"]:
-        result = negative_response_chain.invoke({"review": review})
-        response_message = result["message"]
-
-    return {
-        **sentiment,
-        "response_message": response_message,
-    }
+#def handle_negative_review(review: str) -> dict:
+#   """
+#   Analyze review sentiment and generate a personalized apology for negative reviews.
+#
+#   If the review is positive, returns None for the response message.
+#
+#   Args:
+#       review: Customer review text
+#
+#   Returns:
+#       dict with keys:
+#           - positive_sentiment (bool): True if review is positive
+#           - reasoning (str): Explanation of the sentiment classification
+#           - response_message (str | None): Apology message with 25% discount offer,
+#             or None if review is positive
+#   """
+#   sentiment = analyze_sentiment(review)
+#
+#   response_message = None
+#   if not sentiment["positive_sentiment"]:
+#       result = negative_response_chain.invoke({"review": review})
+#       response_message = result["message"]
+#
+#   return {
+#       **sentiment,
+#       "response_message": response_message,
+#   }
 
 
 # =============================================================================
