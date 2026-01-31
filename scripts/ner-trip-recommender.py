@@ -4,8 +4,135 @@ import spacy
 import chromadb
 from chromadb.utils.embedding_functions import OpenAIEmbeddingFunction
 from dotenv import load_dotenv
+from langchain_openai import ChatOpenAI
+from langchain_core.prompts import PromptTemplate
+from langchain_core.output_parsers import JsonOutputParser
+from langchain_core.runnables import RunnablePassthrough, RunnableBranch, RunnableLambda
 
-load_dotenv()
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+PROJECT_ROOT = os.path.dirname(SCRIPT_DIR)
+
+load_dotenv(dotenv_path=os.path.join(PROJECT_ROOT, ".env"))
+
+
+# =============================================================================
+# SENTIMENT ANALYSIS (from W3-llm-flows-and-monitoring.ipynb)
+# =============================================================================
+
+llm = ChatOpenAI(temperature=0, model_name="gpt-4o")
+
+sentiment_prompt = PromptTemplate(
+    template="""You are a sentiment analysis expert.
+Review the following customer review and determine if it's positive or negative.
+
+Review: ```{review}```
+
+Return answer as a valid json object with the following format:
+{{"positive_sentiment": boolean, "reasoning": string}}
+""",
+    input_variables=["review"]
+)
+
+sentiment_chain = sentiment_prompt | llm | JsonOutputParser()
+
+
+def analyze_sentiment(review: str) -> dict:
+    """
+    Analyze sentiment of a customer review using LLM.
+
+    Args:
+        review: Customer review text
+
+    Returns:
+        dict with keys:
+            - positive_sentiment (bool): True if review is positive
+            - reasoning (str): Explanation of the sentiment classification
+    """
+    return sentiment_chain.invoke({"review": review})
+
+
+# =============================================================================
+# NEGATIVE REVIEW RESPONSE (from W3-llm-flows-and-monitoring.ipynb)
+# =============================================================================
+
+negative_response_prompt = PromptTemplate(
+    template="""You are a customer service representative for a travel company.
+A customer has left a negative review about one of our trips.
+
+Customer Review: {review}
+
+Based on the review, identify what they specifically disliked and create a personalized response that:
+1. Apologizes for their negative experience
+2. Addresses the specific issue they mentioned
+3. Explains how you'll mitigate this issue in the future
+4. Offers a 25% discount on their next trip
+5. Thanks them for their feedback
+
+Return your response as a valid JSON object with the following format:
+{{"message": str}}
+""",
+    input_variables=["review"]
+)
+
+negative_response_chain = negative_response_prompt | llm | JsonOutputParser()
+
+
+# =============================================================================
+# POSITIVE REVIEW RESPONSE (from W3-llm-flows-and-monitoring.ipynb)
+# =============================================================================
+
+positive_response_prompt = PromptTemplate(
+    template="""You are a customer service representative for a travel company.
+A customer has left a positive review about one of our trips.
+
+Customer Review: {review}
+
+Based on the review and the recommended trips below, create a personalized response that:
+1. Thanks them for their positive feedback
+2. Highlights what they enjoyed
+3. Recommends the top trip below that best matches their interests
+4. Encourages them to book their next adventure
+
+Recommended trips:
+{recommendations_text}
+
+Return your response as a valid JSON object with the following format:
+{{"message": str}}
+""",
+    input_variables=["review", "recommendations_text"]
+)
+
+positive_response_chain = positive_response_prompt | llm | JsonOutputParser()
+
+
+def handle_negative_review(review: str) -> dict:
+    """
+    Analyze review sentiment and generate a personalized apology for negative reviews.
+
+    If the review is positive, returns None for the response message.
+
+    Args:
+        review: Customer review text
+
+    Returns:
+        dict with keys:
+            - positive_sentiment (bool): True if review is positive
+            - reasoning (str): Explanation of the sentiment classification
+            - response_message (str | None): Apology message with 25% discount offer,
+              or None if review is positive
+    """
+    sentiment = analyze_sentiment(review)
+
+    response_message = None
+    if not sentiment["positive_sentiment"]:
+        result = negative_response_chain.invoke({"review": review})
+        response_message = result["message"]
+
+    return {
+        **sentiment,
+        "response_message": response_message,
+    }
+
 
 # =============================================================================
 # NER MODEL SETUP (from Get-NER.ipynb)
@@ -25,7 +152,7 @@ def load_spacy_model(model_path, base_model="en_core_web_md"):
 
 # Load NER model
 print("Loading NER model...")
-ner_model = load_spacy_model("../models/ner_geo")
+ner_model = load_spacy_model(os.path.join(PROJECT_ROOT, "models", "ner_geo"))
 print("NER model loaded.")
 
 
@@ -73,7 +200,7 @@ def initialize_trip_vector_store():
     print("Initializing ChromaDB vector store...")
 
     # Load trips data
-    with open('../data/trips_data.json', 'r', encoding='utf-8') as f:
+    with open(os.path.join(PROJECT_ROOT, 'data', 'trips_data.json'), 'r', encoding='utf-8') as f:
         trips = json.load(f)
 
     # Initialize ChromaDB (in-memory)
@@ -155,6 +282,8 @@ def search_trips_by_entities(geo_entities: list, n_results: int = 3) -> list:
             "city": results['metadatas'][0][i]['city'],
             "cost": results['metadatas'][0][i]['cost'],
             "days": results['metadatas'][0][i]['days'],
+            "start_date": results['metadatas'][0][i]['start_date'],
+            "extra_activities": trips[trip_idx]['Extra activities'],
             "distance": results['distances'][0][i],
             "details": trips[trip_idx]['Trip details']
         })
@@ -238,37 +367,147 @@ def recommend_trips_from_review(review: str, n_results: int = 3, verbose: bool =
 
 
 # =============================================================================
+# POSITIVE REVIEW HANDLER
+# =============================================================================
+
+def handle_positive_review(review: str) -> dict:
+    """
+    Generate trip recommendations and a personalized message for a positive review.
+
+    Args:
+        review: Customer review text
+
+    Returns:
+        dict with keys:
+            - positive_sentiment (bool): always True
+            - reasoning (str): explanation of the sentiment classification
+            - entities (list): extracted NER entities [{label, text}, ...]
+            - recommendations (list): top 3 matching trips
+            - response_message (str): personalized message with trip suggestion
+    """
+    sentiment = analyze_sentiment(review)
+
+    ner_result = extract_entities_from_review(review)
+    entities = ner_result["entities"]
+
+    geo_entities = list(dict.fromkeys(
+        ent["text"] for ent in entities if ent["label"] in ["geo", "gpe", "nat"]
+    ))
+
+    recommendations = search_trips_by_entities(geo_entities) if geo_entities else []
+
+    recs_text = "\n".join([
+        f"#{r['rank']}: {r['city']}, {r['country']} - {r['cost']} EUR, {r['days']} days - {r['details'][:150]}"
+        for r in recommendations
+    ]) or "No specific trip recommendations available."
+
+    response = positive_response_chain.invoke({
+        "review": review,
+        "recommendations_text": recs_text,
+    })
+
+    return {
+        "positive_sentiment": True,
+        "reasoning": sentiment["reasoning"],
+        "entities": entities,
+        "recommendations": recommendations,
+        "response_message": response["message"],
+    }
+
+
+# =============================================================================
+# FULL REVIEW CHAIN (RunnablePassthrough + RunnableBranch)
+# =============================================================================
+#
+# Pipeline:
+#   Input: {"review": "..."}
+#     ↓ sentiment_chain (classify positive/negative)
+#     ↓ RunnableBranch
+#     ├─ positive → handle_positive_review (recommendations + personalized message)
+#     └─ negative → negative_response_chain (apology + 25% discount)
+#
+
+full_review_chain = (
+    RunnablePassthrough.assign(
+        sentiment_result=sentiment_chain
+    )
+    | RunnableBranch(
+        (
+            lambda x: x["sentiment_result"]["positive_sentiment"],
+            RunnableLambda(lambda x: handle_positive_review(x["review"]))
+        ),
+        (
+            lambda x: not x["sentiment_result"]["positive_sentiment"],
+            RunnableLambda(lambda x: {
+                "positive_sentiment": False,
+                "reasoning": x["sentiment_result"]["reasoning"],
+                "entities": extract_entities_from_review(x["review"])["entities"],
+                "recommendations": [],
+                "response_message": negative_response_chain.invoke(
+                    {"review": x["review"]}
+                )["message"],
+            })
+        ),
+        # Default fallback
+        RunnableLambda(lambda x: {
+            "positive_sentiment": None,
+            "reasoning": "Unable to determine sentiment",
+            "entities": [],
+            "recommendations": [],
+            "response_message": None,
+        })
+    )
+)
+
+
+# =============================================================================
 # MAIN - TEST THE PIPELINE
 # =============================================================================
 
 if __name__ == "__main__":
-    # Test review 1: Spanish hotel
-    review_1 = """hotel america nice hotel good location stayed 3 nights hotel america late december,
-    rooms modern nice, really liked location hotel, located 3 blocks main area, excellent location
-    base stay explore interesting parts city, able walk las ramblas neighborhoods gothic district,
-    walked sacred familia cathedral no 15 minutes morning, breakfast adequate run things wait long
-    breakfast, negatives street noise pretty loud room, set typical spain hard fault hotel america"""
-
-    print("\n" + "="*80)
-    print("TEST 1: Spanish Hotel Review")
-    print("="*80)
-    recommendations_1 = recommend_trips_from_review(review_1)
-
-    # Test review 2: Beach resort
-    review_2 = """amazing beach resort red sea, snorkeling was incredible, saw beautiful coral reef
+    # ---- Test full_review_chain with a positive review ----
+    positive_review = """amazing beach resort red sea, snorkeling was incredible, saw beautiful coral reef
     and colorful fish, staff very friendly, food was great, egyptian cuisine delicious,
     visited pyramids on day trip to cairo, unforgettable experience in egypt"""
 
     print("\n" + "="*80)
-    print("TEST 2: Egypt Beach Resort Review")
+    print("FULL CHAIN TEST 1: Positive Review (Egypt)")
     print("="*80)
-    recommendations_2 = recommend_trips_from_review(review_2)
+    print(f"Review: {positive_review.strip()[:200]}...")
 
-    # Test review 3: Italian trip
-    review_3 = """wonderful stay in rome, visited colosseum and vatican, ate amazing pasta and gelato,
-    italian food is the best, walked through beautiful piazzas, romantic city"""
+    result_positive = full_review_chain.invoke({"review": positive_review})
+
+    print(f"\nPositive? {result_positive['positive_sentiment']}")
+    if result_positive.get("entities"):
+        print(f"\nEntities:")
+        for ent in result_positive["entities"]:
+            print(f"  [{ent['label']}] {ent['text']}")
+    print(f"\nResponse message:\n\n{result_positive['response_message']}")
+    if result_positive.get("recommendations"):
+        print(f"\nRecommended trips:")
+        for rec in result_positive["recommendations"]:
+            activities = ", ".join(rec['extra_activities'])
+            print(f"  #{rec['rank']}: {rec['city']}, {rec['country']} - {rec['cost']} EUR, {rec['days']} days, Start: {rec['start_date']}")
+            print(f"       Activities: {activities}")
+            print(f"       Details: {rec['details'][:100]}...")
+
+    # ---- Test full_review_chain with a negative review ----
+    negative_review = """dump, place dump, incredibly noisy windows closed not sleep,
+    cut trip short days, staff extremely rude, toilet situated way legs literally
+    tucked sink sit sideways, smelled urine, air conditioning worked poorly,
+    rundown kind seedy town, not recommend, low point month trip italy"""
 
     print("\n" + "="*80)
-    print("TEST 3: Italian Trip Review")
+    print("FULL CHAIN TEST 2: Negative Review (Italy)")
     print("="*80)
-    recommendations_3 = recommend_trips_from_review(review_3)
+    print(f"Review: {negative_review.strip()[:200]}...")
+
+    result_negative = full_review_chain.invoke({"review": negative_review})
+
+    print(f"\nPositive? {result_negative['positive_sentiment']}")
+    print(f"Reasoning: {result_negative.get('reasoning', 'N/A')}")
+    if result_negative.get("entities"):
+        print(f"\nEntities:")
+        for ent in result_negative["entities"]:
+            print(f"  [{ent['label']}] {ent['text']}")
+    print(f"\nResponse message:\n\n{result_negative['response_message']}")
