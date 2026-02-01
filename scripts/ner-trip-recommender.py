@@ -23,12 +23,18 @@ llm = ChatOpenAI(temperature=0, model_name="gpt-4o")
 
 sentiment_prompt = PromptTemplate(
     template="""You are a sentiment analysis expert.
-Review the following customer review and determine if it's positive or negative.
+Review the following customer review and rate the sentiment on a scale of 1-5:
+
+1 = Very negative
+2 = Somewhat negative
+3 = Neutral
+4 = Somewhat positive
+5 = Very positive
 
 Review: ```{review}```
 
 Return answer as a valid json object with the following format:
-{{"positive_sentiment": boolean, "reasoning": string}}
+{{"sentiment_score": integer (1-5), "reasoning": string}}
 """,
     input_variables=["review"]
 )
@@ -45,7 +51,7 @@ def analyze_sentiment(review: str) -> dict:
 
     Returns:
         dict with keys:
-            - positive_sentiment (bool): True if review is positive
+            - sentiment_score (int): Sentiment rating from 1 (very negative) to 5 (very positive)
             - reasoning (str): Explanation of the sentiment classification
     """
     return sentiment_chain.invoke({"review": review})
@@ -109,14 +115,14 @@ def handle_negative_review(review: str) -> dict:
     """
     Analyze review sentiment and generate a personalized apology for negative reviews.
 
-    If the review is positive, returns None for the response message.
+    If the review is positive (score 4-5), returns None for the response message.
 
     Args:
         review: Customer review text
 
     Returns:
         dict with keys:
-            - positive_sentiment (bool): True if review is positive
+            - sentiment_score (int): Sentiment rating from 1-5
             - reasoning (str): Explanation of the sentiment classification
             - response_message (str | None): Apology message with 25% discount offer,
               or None if review is positive
@@ -124,7 +130,8 @@ def handle_negative_review(review: str) -> dict:
     sentiment = analyze_sentiment(review)
 
     response_message = None
-    if not sentiment["positive_sentiment"]:
+    # Only generate apology for negative reviews (score 1-2)
+    if sentiment["sentiment_score"] <= 2:
         result = negative_response_chain.invoke({"review": review})
         response_message = result["message"]
 
@@ -379,7 +386,7 @@ def handle_positive_review(review: str) -> dict:
 
     Returns:
         dict with keys:
-            - positive_sentiment (bool): always True
+            - sentiment_score (int): Sentiment rating (4-5 for positive)
             - reasoning (str): explanation of the sentiment classification
             - entities (list): extracted NER entities [{label, text}, ...]
             - recommendations (list): top 3 matching trips
@@ -407,7 +414,7 @@ def handle_positive_review(review: str) -> dict:
     })
 
     return {
-        "positive_sentiment": True,
+        "sentiment_score": sentiment["sentiment_score"],
         "reasoning": sentiment["reasoning"],
         "entities": entities,
         "recommendations": recommendations,
@@ -421,10 +428,11 @@ def handle_positive_review(review: str) -> dict:
 #
 # Pipeline:
 #   Input: {"review": "..."}
-#     ↓ sentiment_chain (classify positive/negative)
+#     ↓ sentiment_chain (classify 1-5)
 #     ↓ RunnableBranch
-#     ├─ positive → handle_positive_review (recommendations + personalized message)
-#     └─ negative → negative_response_chain (apology + 25% discount)
+#     ├─ score 4-5 (positive) → handle_positive_review (recommendations + personalized message)
+#     ├─ score 3 (neutral) → no special response
+#     └─ score 1-2 (negative) → negative_response_chain (apology + 25% discount)
 #
 
 full_review_chain = (
@@ -432,14 +440,16 @@ full_review_chain = (
         sentiment_result=sentiment_chain
     )
     | RunnableBranch(
+        # Positive: score 4-5
         (
-            lambda x: x["sentiment_result"]["positive_sentiment"],
+            lambda x: x["sentiment_result"]["sentiment_score"] >= 4,
             RunnableLambda(lambda x: handle_positive_review(x["review"]))
         ),
+        # Negative: score 1-2
         (
-            lambda x: not x["sentiment_result"]["positive_sentiment"],
+            lambda x: x["sentiment_result"]["sentiment_score"] <= 2,
             RunnableLambda(lambda x: {
-                "positive_sentiment": False,
+                "sentiment_score": x["sentiment_result"]["sentiment_score"],
                 "reasoning": x["sentiment_result"]["reasoning"],
                 "entities": extract_entities_from_review(x["review"])["entities"],
                 "recommendations": [],
@@ -448,11 +458,11 @@ full_review_chain = (
                 )["message"],
             })
         ),
-        # Default fallback
+        # Neutral (score 3) or fallback: no special response
         RunnableLambda(lambda x: {
-            "positive_sentiment": None,
-            "reasoning": "Unable to determine sentiment",
-            "entities": [],
+            "sentiment_score": x["sentiment_result"].get("sentiment_score"),
+            "reasoning": x["sentiment_result"].get("reasoning", "Unable to determine sentiment"),
+            "entities": extract_entities_from_review(x["review"])["entities"],
             "recommendations": [],
             "response_message": None,
         })
@@ -477,7 +487,8 @@ if __name__ == "__main__":
 
     result_positive = full_review_chain.invoke({"review": positive_review})
 
-    print(f"\nPositive? {result_positive['positive_sentiment']}")
+    print(f"\nSentiment Score: {result_positive['sentiment_score']} / 5")
+    print(f"Reasoning: {result_positive.get('reasoning', 'N/A')}")
     if result_positive.get("entities"):
         print(f"\nEntities:")
         for ent in result_positive["entities"]:
@@ -504,7 +515,7 @@ if __name__ == "__main__":
 
     result_negative = full_review_chain.invoke({"review": negative_review})
 
-    print(f"\nPositive? {result_negative['positive_sentiment']}")
+    print(f"\nSentiment Score: {result_negative['sentiment_score']} / 5")
     print(f"Reasoning: {result_negative.get('reasoning', 'N/A')}")
     if result_negative.get("entities"):
         print(f"\nEntities:")

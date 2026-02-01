@@ -86,17 +86,22 @@ if st.button("Analyze review", type="primary", use_container_width=True):
     with st.spinner("Analyzing sentiment and generating response..."):
         result = recommender.full_review_chain.invoke({"review": review_text})
 
-    is_positive = result["positive_sentiment"]
+    sentiment_score = result.get("sentiment_score")
 
     # ---- Sentiment badge ----
     st.divider()
-    if is_positive:
-        st.success("**Sentiment: POSITIVE** ✅")
+    if sentiment_score:
+        if sentiment_score >= 4:
+            st.success(f"**Sentiment Score: {sentiment_score} / 5** ✅ (Positive)")
+        elif sentiment_score == 3:
+            st.info(f"**Sentiment Score: {sentiment_score} / 5** ➖ (Neutral)")
+        else:
+            st.error(f"**Sentiment Score: {sentiment_score} / 5** ❌ (Negative)")
     else:
-        st.error("**Sentiment: NEGATIVE** ❌")
+        st.warning("**Sentiment: Unable to determine**")
 
     if result.get("reasoning"):
-        st.info(f"**Reasoning:** {result['reasoning']}")
+        st.caption(f"**Reasoning:** {result['reasoning']}")
 
     # ---- NER entities (positive branch) ----
     entities = result.get("entities", [])
